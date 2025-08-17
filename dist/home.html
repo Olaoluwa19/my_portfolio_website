@@ -18,28 +18,29 @@
 
 <body>
     <header>
-        <h1><a href="home.html"><i class="fa-solid fa-house-chimney"></i></a></h1>
+        <a href="home.html"><i class="fa-solid fa-house-chimney"></i></a>
     </header>
 
     <main>
-        <article id="about" class="about">
-            <h2>Welcome to Oladapo Oluwadurotimi Portfolio website.</h2>
+        <h1>Oladapo Oluwadurotimi portfolio website.</h1>
+        <section id="about" class="about" aria-labelledby="about__header">
+            <h2 id="about__header" class="about__header">About Oladapo Oluwadurotimi</h2>
             <figure>
                 <img src="" alt="oladapo Oluwadurotimi">
                 <figcaption>Oladapo Oluwadurotimi</figcaption>
             </figure>
-        </article>
-        <article id="tech_stacks" class="tech_stacks">
-            <h2>Tech Stacks</h2>
-            <ul class="techStack" id="techStack">
+        </section>
+        <section id="tech_stacks" class="tech_stacks" aria-labelledby="tech_stacks__header">
+            <h2 id="tech_stacks__header" class="tech_stacks__header">Tech Stacks</h2>
+            <ul class="tech_stack__list" id="tech_stack__list">
                 <li>Html</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
             </ul>
-        </article>
-        <article id="contact" class="contact">
-            <h2>Contact Me:</h2>
-            <div id="contact_social" class="contact_social">
+        </section>
+        <section id="contact" class="contact" aria-labelledby="contact__header">
+            <h2 id="contact__header" class="contact__header">Contact Me:</h2>
+            <ul id="contact_social" class="contact_social">
                 <li>
                     <a href="https://github.com/Olaoluwa19" target="_blank">
                         <i class="fa-brands fa-square-github"></i>
@@ -55,7 +56,7 @@
                         <i class="fa-brands fa-square-youtube"></i>
                     </a>
                 </li>
-            </div>
+            </ul>
             <form id="contact_form" class="contact_form">
                 <label for="form_text">Get CV:</label>
                 <input type="email" id="form_text" name="form_text" placeholder="Enter your email" autocomplete="on"
@@ -63,7 +64,7 @@
                 <button type="submit" class="emailForm__button" id="emailForm__button" title="Submit Email"
                     aria-label="Enter Email to get CV"><i class="fa-solid fa-arrow-down"></i></button>
             </form>
-        </article>
+        </section>
     </main>
 
     <footer>
