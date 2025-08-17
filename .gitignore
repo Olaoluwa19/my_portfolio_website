@@ -1,0 +1,7 @@
+# Ignore node_modules directory
+node_modules
+note.txt
+.env
+*/node_modules/
+*/note.txt
+*/.env
