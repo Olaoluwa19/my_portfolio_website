@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* || VARIABLES */
+:root {
+  /* CSS HEX */
+  --thistle: #d1c4e9ff;
+  --raisin-black: #19181dff;
+  --ultra-violet: #544385ff;
+  --antiflash-white: #ebebebff;
+
+  /* FONT */
+  --FF: "Montserrat", sans-serif;
+  --FF-HEADINGS: "Montserrat", sans-serif;
+  --FS: CLAMP(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BODY-BGCOLOR: #ebebebff;
+  --FONT-COLOR: #19181dff;
+  --HEADER-BGCOLOR: #544385ff;
+  --HEADER-COLOR: #ebebebff;
+  --BORDER-COLOR: #d1c4e9ff;
+  --HIDHLIGHT-COLOR: #544385ff;
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+}
+
+/* UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* GENERAL STYLE */
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--BODY-BGCOLOR);
+  color: var(--FONT-COLOR);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+header,
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--FF-HEADINGS);
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+  color: var(--HIDHLIGHT-COLOR);
+}
