@@ -26,14 +26,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header" role="banner">
         <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
     </header>
 
     <main>
-        <h1>Oladapo Oluwadurotimi - Backend Engineer & Web Developer Portfolio</h1>
-        <section id="about" class="about" aria-labelledby="about__header">
-            <h2 id="about__header" class="about__header">About Oladapo Oluwadurotimi</h2>
+        <h1 class="offscreen">Oladapo Oluwadurotimi - Backend Engineer & Web Developer Portfolio</h1>
+        <section id="about" class="about" aria-labelledby="about__h2">
+            <h2 id="about__h2" class="about__h2">About Oladapo Oluwadurotimi</h2>
             <figure>
                 <img src="img/oladapo_oluwadurotimi.JPG"
                     alt="Portrait of Oladapo Oluwadurotimi, backend engineer and web developer"
@@ -46,57 +46,62 @@
 
         <section id="tech_stacks" class="tech_stacks" aria-labelledby="tech_stacks__header">
             <h2 id="tech_stacks__header" class="tech_stacks__header">Tech Stacks</h2>
-            <ul class="tech_stack__list" id="tech_stack__list">
-                <li>Html</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+            <ul class="tech_stack__ul" id="tech_stack__ul">
+                <li id="tech_stack__li" class="tech_stack__li">Html</li>
+                <li id="tech_stack__li" class="tech_stack__li">CSS</li>
+                <li id="tech_stack__li" class="tech_stack__li">JavaScript</li>
             </ul>
         </section>
 
         <section id="education" class="education" aria-labelledby="education__header">
             <h2 id="education__header" class="education__header">Education</h2>
-            <article>
-                <h3 class="education__title">Complete JavaScript Developer(HTML, CSS, Vanilla.js, Nodejs, Expressjs and
+            <article id="education_details" class="education_details" ariala-belledby="education__title">
+                <h3 id="education_title" class="education__title">Complete JavaScript Developer(HTML, CSS, Vanilla.js,
+                    Nodejs, Expressjs and
                     MongoDB)</h3>
-                <p class="education__institution"><a href="https://www.youtube.com/@DaveGrayTeachesCode/playlists"
-                        target="_blank">Dave
+                <p id="education__institution" class="education__institution"><a
+                        href="https://www.youtube.com/@DaveGrayTeachesCode/playlists" target="_blank">Dave
                         Gray Teaches code</a></p>
-                <p class="education__year">Graduated: 2022</p>
-                <p class="education__description">Focused on building RESTFUL web API with nodejs, expressjs, MongoDB.
+                <p id="education__year" class="education__year">Graduated: 2022</p>
+                <p id="education__description" class="education__description">Focused on building RESTFUL web API with
+                    nodejs, expressjs, MongoDB.
                 </p>
             </article>
 
-            <article>
-                <h3 class="education__title">Advanced Nodejs concept</h3>
-                <p class="education__institution"><a
+            <article id="education_details" class="education_details" ariala-belledby="education__title">
+                <h3 id="education_title" class="education__title">Advanced Nodejs concept</h3>
+                <p id="education__institution" class="education__institution"><a
                         href="https://youtube.com/playlist?list=PL5Lsd0YA4OMGN86vWiW7O52izu-cTxcS3&si=WBAQ2Gd51a5hjsVI"
                         target="_blank">Software
                         Developers Diaries</a></p>
-                <p class="education__year">Graduated: 2022</p>
-                <p class="education__description">Focused on Nodejs advanced concept such as multithreading, memory
+                <p id="education__year" class="education__year">Graduated: 2022</p>
+                <p id="education__description" class="education__description">Focused on Nodejs advanced concept such as
+                    multithreading, memory
                     management, performancce etc.</p>
             </article>
 
-            <article>
-                <h3 class="education__title">The Complete Guide to Become a Software Architect</h3>
-                <p class="education__institution"><a
+            <article id="education_details" class="education_details" ariala-belledby="education__title">
+                <h3 id="education_title" class="education__title">The Complete Guide to Become a Software Architect</h3>
+                <p id="education__institution" class="education__institution"><a
                         href="https://youtube.com/playlist?list=PLWNY6gSbdzSv_ko_UEcD0q-4AuWMqHWd5&si=fX-5k7fN_AKerybg"
                         target="_blank">All
                         Abbout U</a>
                 </p>
-                <p class="education__year">Graduated: 2022</p>
-                <p class="education__description">Focused on Practical and Comprehensive High-level Principles of
+                <p id="education__year" class="education__year">Graduated: 2022</p>
+                <p id="education__description" class="education__description">Focused on Practical and Comprehensive
+                    High-level Principles of
                     becoming a Software Architect.</p>
             </article>
 
-            <article>
-                <h3 class="education__title">System Design and Architecture</h3>
-                <p class="education__institution"><a
+            <article id="education_details" class="education_details" ariala-belledby="education__title">
+                <h3 id="education_title" class="education__title">System Design and Architecture</h3>
+                <p id="education__institution" class="education__institution"><a
                         href="https://youtube.com/playlist?list=PL5Lsd0YA4OMFvX88T5xH93NqBALI7TENz&si=PfYo8XFQQanTwC0a"
                         target="_blank">Software
                         Developers Diaries</a> </p>
-                <p class="education__year">Graduated: 2022</p>
-                <p class="education__description">Focused on software engineering principles, data structures, and
+                <p id="education__year" class="education__year">Graduated: 2022</p>
+                <p id="education__description" class="education__description">Focused on software engineering
+                    principles, data structures, and
                     algorithms.</p>
             </article>
 
@@ -131,9 +136,9 @@
         </section>
     </main>
 
-    <footer>
-        <nav id="navButtons" class="navButtons" role="navigation">
-            <div>
+    <footer class="footer" id="footer" role="contentinfo">
+        <nav id="footer_nav" class="footer_nav" role="navigation">
+            <div id="nav_button__container" class="nav_button__container">
                 <button id="blog_button" class="button blog_button" title="Blog" aria-label="Go to blog page"><a
                         href="blog.html"><i class="fa-solid fa-blog"></i></a></button>
                 <button id="project_button" class="button project_button" title="Project"
@@ -147,7 +152,7 @@
                         href="login.html"><i class="fa-solid fa-user-plus"></i></a></button>
             </div>
         </nav>
-        <p>&copy; 2023 Oladapo Oluwadurotimi. All rights reserved.</p>
+        <p class="footer_p" id="footer_p">&copy; 2023 Oladapo Oluwadurotimi. All rights reserved.</p>
     </footer>
 </body>
 

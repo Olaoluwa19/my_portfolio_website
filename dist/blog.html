@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header" role="banner">
         <a href="blog.html"><i class="fa-solid fa-blog"></i></a>
     </header>
     <main>
@@ -25,7 +25,7 @@
             <h2 class="blog_post__header" id="blog_post__header">Blog Post</h2>
             <article class="blog_post__article" id="blog_post__article">
                 <figure>
-                    <img src="img/gratisograph-mars-robot-1035x780.jpg" alt="diagram image">
+                    <img src="img/gratisograph-mars-robot-mod.jpg" alt="diagram image">
                     <figcaption>Figure 1.0</figcaption>
                 </figure>
                 <h3>Sub-header</h3>
@@ -35,9 +35,9 @@
         </section>
     </main>
 
-    <footer>
-        <nav id="navButtons" class="navButtons" role="navigation">
-            <div>
+    <footer class="footer" id="footer" role="contentinfo">
+        <nav id="footer_nav" class="footer_nav" role="navigation">
+            <div id="nav_button__container" class="nav_button__container">
                 <button id="blog_button" class="button blog_button" title="Blog" aria-label="Go to blog page"><a
                         href="blog.html"><i class="fa-solid fa-blog"></i></a></button>
                 <button id="project_button" class="button project_button" title="Project"
@@ -51,7 +51,7 @@
                         href="login.html"><i class="fa-solid fa-user-plus"></i></a></button>
             </div>
         </nav>
-        <p>&copy; 2023 Oladapo Oluwadurotimi. All rights reserved.</p>
+        <p class="footer_p" id="footer_p">&copy; 2023 Oladapo Oluwadurotimi. All rights reserved.</p>
     </footer>
 </body>
 
