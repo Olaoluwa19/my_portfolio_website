@@ -92,7 +92,8 @@ footer {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--FF-HEADINGS);
   letter-spacing: 0.1em;
   margin-bottom: 1em;

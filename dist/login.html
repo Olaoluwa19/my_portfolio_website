@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the Login page of Oladapo Oluwadurotimi portfolio website." />
     <title>Login page</title>
-    <!-- <link rel="icon" href="favicon.png" type="image/x-icon " /> -->
+    <link rel="icon" href="img/oladapo_oluwadurotimi.JPG" type="image/x-icon " />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
@@ -18,19 +18,20 @@
 
 <body>
     <header class="header" id="header" role="banner">
-        <a href="login.html"><i class="fa-solid fa-user-plus"></i>
+        <i class="fa-solid fa-user-plus"></i>
     </header>
+
     <main>
         <section class="login" id="login">
-            <h2>Login</h2>
-            <form action="">
+            <h2 class="login_h2" id="login_h2">Login</h2>
+            <form class="login_form" id="login_form">
                 <p>
-                    <label for="Username"></label>
-                    <input type="text" id="Username" name="Username" placeholder="Username" required>
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" placeholder="username" required>
                 </p>
                 <p>
-                    <label for="Username"></label>
-                    <input type="text" id="Username" name="Username" placeholder="Username" required>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
                 </p>
             </form>
             <p><a href="register.html">Register</a></p>
@@ -39,19 +40,33 @@
 
     <footer class="footer" id="footer" role="contentinfo">
         <nav id="footer_nav" class="footer_nav" role="navigation">
-            <div id="nav_button__container" class="nav_button__container">
-                <button id="blog_button" class="button blog_button" title="Blog" aria-label="Go to blog page"><a
-                        href="blog.html"><i class="fa-solid fa-blog"></i></a></button>
-                <button id="project_button" class="button project_button" title="Project"
-                    aria-label="Go to project page"><a href="project.html"><i
-                            class="fa-solid fa-list-check"></i></a></button>
-                <button id="home_button" class="button home_button" title="Home" aria-label="Go to Home page"><a
-                        href="index.html"><i class="fa-solid fa-house-chimney"></i></a></button>
-                <button id="admin_button" class="button admin_button" title="Admin" aria-label="Go to admin page"><a
-                        href="admin.html"><i class="fa-solid fa-toolbox"></i></a></button>
-                <button id="login_button" class="button login_button" title="Login" aria-label="Go to Login Page"><a
-                        href="login.html"><i class="fa-solid fa-user-plus"></i></a></button>
-            </div>
+            <ul id="footer_nav__ul" class="nav_button__container">
+                <li title="Blog" aria-label="Go to blog page">
+                    <a href="blog.html">
+                        <i class="fa-solid fa-blog"></i>
+                    </a>
+                </li>
+                <li title="Project" aria-label="Go to project page">
+                    <a href="project.html">
+                        <i class="fa-solid fa-list-check"></i>
+                    </a>
+                </li>
+                <li title="Home" aria-label="Go to Home page">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                </li>
+                <li title="Admin" aria-label="Go to admin page">
+                    <a href="admin.html">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </a>
+                </li>
+                <li title="Login" aria-label="Go to Login Page">
+                    <a href="login.html">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
         <p class="footer_p" id="footer_p">&copy; 2023 Oladapo Oluwadurotimi. All rights reserved.</p>
     </footer>
