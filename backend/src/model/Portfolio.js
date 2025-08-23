@@ -44,6 +44,10 @@ const portfolioSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "Project",
     },
+    blog: {
+      type: Schema.Types.ObjectId,
+      ref: "Blog",
+    },
     socialLink: {
       type: Schema.Types.ObjectId,
       ref: "SocialLink",
