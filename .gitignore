@@ -1,7 +1,16 @@
 # Ignore node_modules directory
 node_modules
-note.txt
-.env
 */node_modules/
-*/note.txt
+
+# Ignore environment variable files
+.env
 */.env
+
+# Ignore note files
+note.txt
+*/note.txt
+text.txt
+
+# Ignore log files
+logs
+src/logs
