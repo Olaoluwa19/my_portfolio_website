@@ -11,6 +11,20 @@ const portfolioSchema = new Schema(
       type: String,
       required: true,
     },
+    email: {
+      type: String,
+      required: true,
+    },
+    phone: {
+      type: String,
+      required: true,
+    },
+    address: {
+      type: String,
+    },
+    refreshToken: {
+      type: String,
+    },
     role: {
       type: [
         {
@@ -44,13 +58,15 @@ const portfolioSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "Project",
     },
-    blog: {
-      type: Schema.Types.ObjectId,
-      ref: "Blog",
-    },
     socialLink: {
       type: Schema.Types.ObjectId,
       ref: "SocialLink",
+    },
+    resume: {
+      type: String,
+    },
+    coverLetter: {
+      type: String,
     },
   },
   { timestamps: true }

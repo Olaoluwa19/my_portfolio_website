@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const projectSchema = new mongoose.Schema(
+const projectSchema = new Schema(
   {
     title: {
       type: String,
@@ -11,9 +12,13 @@ const projectSchema = new mongoose.Schema(
       type: String,
       required: true, // Detailed project overview
     },
+    blog: {
+      type: Schema.Types.ObjectId,
+      ref: "Blog",
+    },
     techStack: [
       {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "TechStack", // Link to technologies used
       },
     ],
@@ -24,6 +29,10 @@ const projectSchema = new mongoose.Schema(
     repoUrl: {
       type: String,
       match: /^https?:\/\/.+/i, // Link to GitHub repo
+    },
+    videoUrl: {
+      type: String,
+      match: /^https?:\/\/.+/i, // Link to YouTube video
     },
     imageUrl: {
       type: String,
